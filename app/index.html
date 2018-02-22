@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/temp/style/style.css">
+    <link rel="import" href="dom.html">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Flex-box</h1>
+    <div class="comment-list " data-count="10"></div>
+        <!-- <div id="app">
+            <p>{{ obj.foo }}</p>
+            <button @click="obj.foo = 'baz'">Change it</button>
+        </div> -->
+
+    <!-- <div id="app-2">
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds to see my dynamically bound title!
+        </span>
+    </div>
+
+    <div id="app-3">
+        <span v-if="seen">Now you see me</span>
+    </div>
+
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <div id="app-6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+
+    <div id="app-7">
+
+        <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo='item'>
+
+            </todo-item>
+        </ol>
+    </div>
+
+    <div id="example"></div> -->
+    <div id="outer" onkeypress="alert('Key press');">outer
+        <input type="text">
+        <div id="innerDiv">inner</div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript" src="js/networkRequest.js"></script>
+<!-- <script type="text/javascript" src="js/practice.js"></script> -->
+<script type="text/javascript" src="js/sampleUI.js"></script>
+<script type="text/javascript" >
+    var div = document.getElementById('innerDiv');
+    var cout = 0;
+    div.addEventListener('click', function(){
+        alert('Clicked');
+        cout ++;
+        console.log(cout);
+    })
+ 
+    div.addEventListener('mouseover', function(){
+        console.log('Loaded Div');
+        cout ++;
+        console.log(cout);
+
+    })
+    
+    div.removeEventListener('mouseover', function(){
+        console.log('remove Loaded Div');
+        cout--;
+        console.log(cout);
+        
+    })
+
+
+</script>
+
+
+</html>
